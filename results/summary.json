@@ -1,0 +1,1086 @@
+{
+  "fast_mode": true,
+  "packs": {
+    "default_rtp": 0.9446666666666667,
+    "target_rtp": 0.85,
+    "epic_plus_odds_scale": 0.8322504430005905,
+    "pack_price": 6.0,
+    "pack_ev": 5.1,
+    "payout": {
+      "mean_value": 5.099999999999999,
+      "sd_value": 9.998957883734723,
+      "skew": 5.13538384904681,
+      "rtp": 0.8499999999999998,
+      "p_value_at_least_price": 0.19492855952578486,
+      "p10": 1.7,
+      "median": 2.1,
+      "p90": 8.6,
+      "p99": 61.65
+    },
+    "monte_carlo": {
+      "n": 400000,
+      "mean_value": 5.10019875,
+      "p_value_at_least_price": 0.19487
+    },
+    "p_legendary_per_pack": 0.028209348330110795,
+    "p_legendary_in_10_packs": 0.24884913852168777,
+    "legendary_flat": {
+      "mean": 35.449241446410696,
+      "sd": 34.94566464784308,
+      "p50": 25,
+      "p90": 81,
+      "p99": 161
+    },
+    "pity": {
+      "threshold": 60,
+      "adjusted_p": 0.019615852626751598,
+      "mean": 35.44924144641072,
+      "sd": 21.416258757239678,
+      "p50": 35,
+      "p90": 60,
+      "p99": 60
+    },
+    "chase_set": {
+      "n_cards": 6,
+      "expected_packs": 113.38249631948003,
+      "expected_spend": 680.2949779168802,
+      "p50": 94,
+      "p90": 210,
+      "p99": 373,
+      "monte_carlo_mean": 113.53025,
+      "monte_carlo_p90": 209.0999999999999
+    },
+    "economics": {
+      "pack_price": 6.0,
+      "rtp": 0.85,
+      "epic_plus_odds_scale": 0.8322504430005905,
+      "pack_ev_market_value": 5.1,
+      "cogs_per_pack": 1.7849999999999997,
+      "margin_rate": 0.7025,
+      "bonus_pack_cost": 1.7849999999999997
+    }
+  },
+  "world": {
+    "seed": 7,
+    "n_players": 70150,
+    "n_transactions": 223090,
+    "players_by_channel": {
+      "influencer": 21997,
+      "organic": 7264,
+      "paid_social": 28512,
+      "referral": 12377
+    },
+    "true_share_still_active": 0.655623663578047,
+    "weekly_cac": {
+      "influencer": 22.273958892509416,
+      "paid_social": 34.02010267661947,
+      "referral": 21.42618184758129
+    }
+  },
+  "sql": {
+    "channel_kpis": [
+      {
+        "channel": "influencer",
+        "players": 21997,
+        "revenue": 430554.97,
+        "revenue_per_player": 19.57334954766559,
+        "repeat_rate": 0.5131608855753057,
+        "avg_order_value": 9.903279280522586,
+        "cac": 22.273958892509416
+      },
+      {
+        "channel": "organic",
+        "players": 7264,
+        "revenue": 283283.48,
+        "revenue_per_player": 38.99827643171806,
+        "repeat_rate": 0.6657488986784141,
+        "avg_order_value": 13.965858804969432,
+        "cac": 0.0
+      },
+      {
+        "channel": "paid_social",
+        "players": 28512,
+        "revenue": 1099976.61,
+        "revenue_per_player": 38.57942655723906,
+        "repeat_rate": 0.6843785072951739,
+        "avg_order_value": 13.898245119716977,
+        "cac": 34.02010267661947
+      },
+      {
+        "channel": "referral",
+        "players": 12377,
+        "revenue": 630650.36,
+        "revenue_per_player": 50.95341035792195,
+        "repeat_rate": 0.7521208693544478,
+        "avg_order_value": 15.13730401805002,
+        "cac": 21.42618184758129
+      }
+    ],
+    "concentration": {
+      "top1_share": 0.10183887976619445,
+      "top10_share": 0.40629822450096265,
+      "top20_share": 0.5792279319705
+    },
+    "max_abs_diff_vs_pandas": {
+      "channel_kpis": 0.0,
+      "retention": 0.0,
+      "concentration": 0.0
+    },
+    "retention_week4": {
+      "influencer": 0.05007996801279488,
+      "organic": 0.09371688115064346,
+      "paid_social": 0.08868071818891492,
+      "referral": 0.11916051984545135
+    }
+  },
+  "ltv": {
+    "n_players": 70150,
+    "dropout_mean_a_over_a_plus_b": {
+      "true": {
+        "influencer": 0.37142857142857144,
+        "organic": 0.22535211267605637,
+        "paid_social": 0.25,
+        "referral": 0.20454545454545453
+      },
+      "estimate": {
+        "influencer": 0.36876836063299734,
+        "organic": 0.23208755808812642,
+        "paid_social": 0.2506099079913727,
+        "referral": 0.20273127294100318
+      },
+      "max_abs_rel_error": 0.02988853901606081
+    },
+    "parameter_recovery": {
+      "max_abs_rel_error_all": 0.23912660072268932,
+      "max_abs_rel_error_rate_params": 0.03886494839021282,
+      "median_abs_rel_error": 0.029345258996674506,
+      "mean_spend_rel_error": {
+        "influencer": -0.006316119540721088,
+        "organic": -0.005176439737475946,
+        "paid_social": -0.003266760033292293,
+        "referral": 0.013635236141337215
+      }
+    },
+    "holdout_13w": {
+      "n_players": 70150,
+      "total_revenue_error": -0.011532587517893655,
+      "total_purchase_error": -0.003656660010177948,
+      "rmse_model": 0.9770373699479958,
+      "rmse_rate_baseline": 1.6388099852803022,
+      "rmse_channel_mean": 1.1071387829024228,
+      "corr_purchases": 0.48793786038475884
+    },
+    "by_channel": [
+      {
+        "channel": "influencer",
+        "pred_rev": 70347.01778494174,
+        "act_rev": 70883.33,
+        "pred_purch": 7067.222150188801,
+        "act_purch": 6956.0,
+        "revenue_error": -0.007566126126668515,
+        "purchase_error": 0.01598938329338706
+      },
+      {
+        "channel": "organic",
+        "pred_rev": 64128.58794900928,
+        "act_rev": 65578.91,
+        "pred_purch": 4590.5109076415065,
+        "act_purch": 4648.0,
+        "revenue_error": -0.022115677906063502,
+        "purchase_error": -0.012368565481603588
+      },
+      {
+        "channel": "paid_social",
+        "pred_rev": 245068.6405449162,
+        "act_rev": 246065.3,
+        "pred_purch": 17577.88203665699,
+        "act_purch": 17616.0,
+        "revenue_error": -0.004050386036079767,
+        "purchase_error": -0.0021638262569829703
+      },
+      {
+        "channel": "referral",
+        "pred_rev": 138833.09282163344,
+        "act_rev": 141897.78,
+        "pred_purch": 9146.51939194062,
+        "act_purch": 9303.0,
+        "revenue_error": -0.021597851484121522,
+        "purchase_error": -0.016820445884056845
+      }
+    ],
+    "by_bucket": [
+      {
+        "bucket": "0",
+        "n": 25204,
+        "predicted": 0.45152931598229173,
+        "actual": 0.4592128233613712
+      },
+      {
+        "bucket": "1",
+        "n": 20902,
+        "predicted": 0.3497266269653304,
+        "actual": 0.35283704908621183
+      },
+      {
+        "bucket": "2",
+        "n": 9688,
+        "predicted": 0.5166610389060422,
+        "actual": 0.5271469859620148
+      },
+      {
+        "bucket": "3",
+        "n": 5168,
+        "predicted": 0.6619840525552034,
+        "actual": 0.6429953560371517
+      },
+      {
+        "bucket": "4",
+        "n": 3078,
+        "predicted": 0.8364861274624082,
+        "actual": 0.8395061728395061
+      },
+      {
+        "bucket": "5+",
+        "n": 6110,
+        "predicted": 1.4223492014279175,
+        "actual": 1.4009819967266777
+      }
+    ],
+    "ltv_by_channel": [
+      {
+        "channel": "influencer",
+        "ltv_revenue_est": 24.822590886411326,
+        "ltv_revenue_true": 24.982772746218096,
+        "ltv_margin_est": 17.437870097703957,
+        "ltv_margin_true": 17.55039785421821,
+        "cac": 22.273958892509416,
+        "bg_loglik": -88226.04040991291,
+        "bg_converged": true,
+        "ltv_to_cac_est": 0.7828814887311387,
+        "ltv_to_cac_true": 0.787933475989322,
+        "ltv_error": -0.006411692626512644
+      },
+      {
+        "channel": "organic",
+        "ltv_revenue_est": 53.66733978172839,
+        "ltv_revenue_true": 53.27518458626818,
+        "ltv_margin_est": 37.70130619666419,
+        "ltv_margin_true": 37.425817171853396,
+        "cac": 0.0,
+        "bg_loglik": -44469.70445239601,
+        "bg_converged": true,
+        "ltv_to_cac_est": null,
+        "ltv_to_cac_true": null,
+        "ltv_error": 0.007360935461897755
+      },
+      {
+        "channel": "paid_social",
+        "ltv_revenue_est": 53.23249495596646,
+        "ltv_revenue_true": 53.19476037641097,
+        "ltv_margin_est": 37.395827706566436,
+        "ltv_margin_true": 37.36931916442871,
+        "cac": 34.02010267661947,
+        "bg_loglik": -172906.58722393773,
+        "bg_converged": true,
+        "ltv_to_cac_est": 1.0992273615995565,
+        "ltv_to_cac_true": 1.0984481593029114,
+        "ltv_error": 0.0007093664730974947
+      },
+      {
+        "channel": "referral",
+        "ltv_revenue_est": 69.25838271336532,
+        "ltv_revenue_true": 67.93587747192169,
+        "ltv_margin_est": 48.65401385613914,
+        "ltv_margin_true": 47.72495392402499,
+        "cac": 21.42618184758129,
+        "bg_loglik": -91463.44179323349,
+        "bg_converged": true,
+        "ltv_to_cac_est": 2.2707738691964607,
+        "ltv_to_cac_true": 2.2274129036859853,
+        "ltv_error": 0.01946696341694021
+      }
+    ],
+    "horizon_weeks": 52,
+    "annual_discount": 0.1
+  },
+  "retention": {
+    "gap_weeks": 8,
+    "n": 70150,
+    "event_share": 0.7898645759087669,
+    "km_checkpoints": [
+      {
+        "index": 0,
+        "channel": "influencer",
+        "week": 8,
+        "survival": 0.31509384086703673,
+        "ci_low": 0.3084733774296136,
+        "ci_high": 0.32171430430445985
+      },
+      {
+        "index": 1,
+        "channel": "influencer",
+        "week": 16,
+        "survival": 0.05865890682764748,
+        "ci_low": 0.055093350844091026,
+        "ci_high": 0.06222446281120394
+      },
+      {
+        "index": 2,
+        "channel": "influencer",
+        "week": 26,
+        "survival": 0.011486055935059813,
+        "ci_low": 0.009684172207945216,
+        "ci_high": 0.01328793966217441
+      },
+      {
+        "index": 3,
+        "channel": "organic",
+        "week": 8,
+        "survival": 0.480606258148631,
+        "ci_low": 0.4681049211401077,
+        "ci_high": 0.4931075951571543
+      },
+      {
+        "index": 4,
+        "channel": "organic",
+        "week": 16,
+        "survival": 0.14089382743223147,
+        "ci_low": 0.1317145497295319,
+        "ci_high": 0.15007310513493105
+      },
+      {
+        "index": 5,
+        "channel": "organic",
+        "week": 26,
+        "survival": 0.0397262753169949,
+        "ci_low": 0.034020783113369396,
+        "ci_high": 0.045431767520620406
+      },
+      {
+        "index": 6,
+        "channel": "paid_social",
+        "week": 8,
+        "survival": 0.49607346158640464,
+        "ci_low": 0.4897565949992578,
+        "ci_high": 0.5023903281735514
+      },
+      {
+        "index": 7,
+        "channel": "paid_social",
+        "week": 16,
+        "survival": 0.14103997395442774,
+        "ci_low": 0.13636999669875552,
+        "ci_high": 0.14570995121009997
+      },
+      {
+        "index": 8,
+        "channel": "paid_social",
+        "week": 26,
+        "survival": 0.04026132871844783,
+        "ci_low": 0.03730536087466782,
+        "ci_high": 0.043217296562227836
+      },
+      {
+        "index": 9,
+        "channel": "referral",
+        "week": 8,
+        "survival": 0.5859360561818518,
+        "ci_low": 0.5766557752036462,
+        "ci_high": 0.5952163371600575
+      },
+      {
+        "index": 10,
+        "channel": "referral",
+        "week": 16,
+        "survival": 0.20035660465822738,
+        "ci_low": 0.19239078792980688,
+        "ci_high": 0.2083224213866479
+      },
+      {
+        "index": 11,
+        "channel": "referral",
+        "week": 26,
+        "survival": 0.06364957047598295,
+        "ci_low": 0.05829401855223382,
+        "ci_high": 0.06900512239973208
+      }
+    ],
+    "logrank": {
+      "chi2": 2229.377925374301,
+      "p_value": 0.0
+    },
+    "cox": [
+      {
+        "index": 0,
+        "term": "channel_influencer",
+        "hazard_ratio": 1.321268539737466,
+        "ci_low": 1.2818830206928793,
+        "ci_high": 1.3618641685076442,
+        "p_value": 8.899901002543417e-73
+      },
+      {
+        "index": 1,
+        "term": "channel_paid_social",
+        "hazard_ratio": 0.9957415253837698,
+        "ci_low": 0.9670485758611161,
+        "ci_high": 1.0252858130634301,
+        "p_value": 0.7748275710803909
+      },
+      {
+        "index": 2,
+        "term": "channel_referral",
+        "hazard_ratio": 0.8461831776988997,
+        "ci_low": 0.818790295889069,
+        "ci_high": 0.8744924968158343,
+        "p_value": 2.5850709093460728e-23
+      },
+      {
+        "index": 3,
+        "term": "log_first_spend",
+        "hazard_ratio": 1.001748822350368,
+        "ci_low": 0.9910610504432934,
+        "ci_high": 1.0125518530180273,
+        "p_value": 0.7495213739240735
+      }
+    ]
+  },
+  "experiment": {
+    "n": 60000,
+    "true_population_ate": 0.8430269820079828,
+    "true_sample_effect": 0.8529879119999775,
+    "mean_y0": 2.4838665000000004,
+    "sd_y": 9.932526250316798,
+    "corr_y0_pre_period": 0.26526700761593125,
+    "srm_p_value": 1.0,
+    "max_abs_smd": 0.007844996723839504,
+    "naive": {
+      "estimate": 0.9238293445939076,
+      "se": 0.08101166572062128,
+      "ci_low": 0.76504647978149,
+      "ci_high": 1.0826122094063253,
+      "p_value": 4.0091131240042404e-30
+    },
+    "cuped": {
+      "estimate": 0.9051938833483737,
+      "se": 0.0786591732519287,
+      "ci_low": 0.7510219037745934,
+      "ci_high": 1.0593658629221538,
+      "p_value": 1.2051625654267356e-30
+    },
+    "cuped_theta": 0.21911268998351166,
+    "se_reduction_cuped": 0.02903893467399432,
+    "mde_naive": 0.22720502344124108,
+    "mde_cuped": 0.2206097701872146,
+    "required_n_per_arm_for_half_the_effect": 8514,
+    "rerandomization": {
+      "true_sample_effect": 0.8529879119999775,
+      "n_rep": 300,
+      "naive": {
+        "mean_estimate": 0.853203759612785,
+        "bias": 0.0002158476128075737,
+        "empirical_sd": 0.07528257528901426,
+        "mean_se": 0.08071091621983316,
+        "coverage": 0.9733333333333334,
+        "rejection_rate": 1.0
+      },
+      "cuped": {
+        "mean_estimate": 0.8554088871505517,
+        "bias": 0.002420975150574267,
+        "empirical_sd": 0.07276698354116438,
+        "mean_se": 0.07834933903657582,
+        "coverage": 0.9666666666666667,
+        "rejection_rate": 1.0
+      },
+      "se_reduction_cuped": 0.029259699850576526
+    },
+    "power_check": {
+      "effect_scaled_to_naive_mde": 0.22720502344124108,
+      "analytic_power": 0.8,
+      "empirical_power_naive": 0.8633333333333333,
+      "empirical_power_cuped": 0.8666666666666667,
+      "n_rep": 300
+    },
+    "peeking": {
+      "n_looks": 5,
+      "n_rep": 600,
+      "fpr_fixed_horizon": 0.04833333333333333,
+      "fpr_peeking_naive": 0.135,
+      "fpr_pocock": 0.043333333333333335,
+      "fpr_obrien_fleming": 0.04833333333333333,
+      "pocock_z": 2.412667633098369,
+      "obrien_fleming_c": 2.04059548317984
+    },
+    "share_profitable_to_treat": 0.08248039914468995,
+    "promo": {
+      "margin_rate": 0.7025,
+      "bonus_pack_cost": 1.7849999999999997,
+      "window_weeks": 4
+    },
+    "uplift": {
+      "n_draws": 2,
+      "train_share": 0.6,
+      "summary": [
+        {
+          "index": 0,
+          "policy": "churn_risk_heuristic",
+          "spearman_vs_true_mean": 0.1695923822070879,
+          "spearman_vs_true_std": 0.007526327169574999,
+          "qini_observed_mean": 0.015267962592588015,
+          "qini_observed_std": 0.02167638626454673,
+          "net_at_10pct_mean": -158.17053605784582,
+          "net_at_10pct_std": 0.17168566353800188,
+          "threshold_share_treated_mean": null,
+          "threshold_share_treated_std": null,
+          "threshold_net_per_1000_mean": null,
+          "threshold_net_per_1000_std": null
+        },
+        {
+          "index": 1,
+          "policy": "dr_learner",
+          "spearman_vs_true_mean": 0.6719264480321897,
+          "spearman_vs_true_std": 0.04322271685696895,
+          "qini_observed_mean": 0.2573228245307492,
+          "qini_observed_std": 0.02954352691166904,
+          "net_at_10pct_mean": 39.04011056082051,
+          "net_at_10pct_std": 16.248286680566657,
+          "threshold_share_treated_mean": 0.05466666666666667,
+          "threshold_share_treated_std": 0.05002780476894825,
+          "threshold_net_per_1000_mean": 33.5473521785682,
+          "threshold_net_per_1000_std": 3.4018061611391692
+        },
+        {
+          "index": 2,
+          "policy": "high_ltv_heuristic",
+          "spearman_vs_true_mean": 0.4137433007278529,
+          "spearman_vs_true_std": 0.0011890863216568964,
+          "qini_observed_mean": 0.22802764495268177,
+          "qini_observed_std": 0.03669202715808993,
+          "net_at_10pct_mean": -38.60198771245017,
+          "net_at_10pct_std": 0.9625907312740936,
+          "threshold_share_treated_mean": null,
+          "threshold_share_treated_std": null,
+          "threshold_net_per_1000_mean": null,
+          "threshold_net_per_1000_std": null
+        },
+        {
+          "index": 3,
+          "policy": "oracle",
+          "spearman_vs_true_mean": 0.9999999999999999,
+          "spearman_vs_true_std": 0.0,
+          "qini_observed_mean": 0.3203799907444987,
+          "qini_observed_std": 0.018670051335898993,
+          "net_at_10pct_mean": 107.13092607277929,
+          "net_at_10pct_std": 2.4286496973117067,
+          "threshold_share_treated_mean": 0.08264583333333334,
+          "threshold_share_treated_std": 8.838834764831361e-05,
+          "threshold_net_per_1000_mean": 108.86397528006147,
+          "threshold_net_per_1000_std": 2.4184331410376094
+        },
+        {
+          "index": 4,
+          "policy": "t_learner",
+          "spearman_vs_true_mean": 0.6335925333674393,
+          "spearman_vs_true_std": 0.008638006073027683,
+          "qini_observed_mean": 0.24239380168235194,
+          "qini_observed_std": 0.013592871059108278,
+          "net_at_10pct_mean": 18.83503539751438,
+          "net_at_10pct_std": 2.2271567520125743,
+          "threshold_share_treated_mean": 0.10956250000000001,
+          "threshold_share_treated_std": 0.0014436763449225472,
+          "threshold_net_per_1000_mean": 14.894728079184599,
+          "threshold_net_per_1000_std": 1.005061178214913
+        },
+        {
+          "index": 5,
+          "policy": "transformed_outcome",
+          "spearman_vs_true_mean": 0.5552872225245543,
+          "spearman_vs_true_std": 0.07159325031878627,
+          "qini_observed_mean": 0.24209357330901035,
+          "qini_observed_std": 0.005657881453075215,
+          "net_at_10pct_mean": 34.17938518954246,
+          "net_at_10pct_std": 22.3581215211017,
+          "threshold_share_treated_mean": 0.06222916666666667,
+          "threshold_share_treated_std": 0.05229643902525507,
+          "threshold_net_per_1000_mean": 36.29961087640614,
+          "threshold_net_per_1000_std": 24.904641468874644
+        },
+        {
+          "index": 6,
+          "policy": "treat_all",
+          "spearman_vs_true_mean": null,
+          "spearman_vs_true_std": null,
+          "qini_observed_mean": null,
+          "qini_observed_std": null,
+          "net_at_10pct_mean": null,
+          "net_at_10pct_std": null,
+          "threshold_share_treated_mean": 1.0,
+          "threshold_share_treated_std": 0.0,
+          "threshold_net_per_1000_mean": -1185.7109602540158,
+          "threshold_net_per_1000_std": 4.061072317538066
+        }
+      ],
+      "decile_table_draw0": [
+        {
+          "index": 0,
+          "decile": 1,
+          "n": 2400,
+          "predicted": 4.349131687784168,
+          "observed": 2.1529517543636976,
+          "true": 2.9331079980972063
+        },
+        {
+          "index": 1,
+          "decile": 2,
+          "n": 2400,
+          "predicted": 1.6893993901548663,
+          "observed": 2.491359021002404,
+          "true": 1.631414417431338
+        },
+        {
+          "index": 2,
+          "decile": 3,
+          "n": 2400,
+          "predicted": 1.1670034165248617,
+          "observed": 1.045817417767573,
+          "true": 1.2198940055886491
+        },
+        {
+          "index": 3,
+          "decile": 4,
+          "n": 2400,
+          "predicted": 0.955905401137439,
+          "observed": 1.2880960385473854,
+          "true": 1.0101289565325993
+        },
+        {
+          "index": 4,
+          "decile": 5,
+          "n": 2400,
+          "predicted": 0.7882763583112639,
+          "observed": 0.7640553225593194,
+          "true": 0.6853659521177885
+        },
+        {
+          "index": 5,
+          "decile": 6,
+          "n": 2400,
+          "predicted": 0.4865146711981538,
+          "observed": 0.30346594089425105,
+          "true": 0.37098581118490037
+        },
+        {
+          "index": 6,
+          "decile": 7,
+          "n": 2400,
+          "predicted": 0.2936322958107836,
+          "observed": 0.14473647334975281,
+          "true": 0.1867093333350052
+        },
+        {
+          "index": 7,
+          "decile": 8,
+          "n": 2400,
+          "predicted": 0.2542863254580429,
+          "observed": -0.18690458306528268,
+          "true": 0.13822374915221178
+        },
+        {
+          "index": 8,
+          "decile": 9,
+          "n": 2400,
+          "predicted": 0.23873955695115398,
+          "observed": 0.20113822161091133,
+          "true": 0.05772701054015421
+        },
+        {
+          "index": 9,
+          "decile": 10,
+          "n": 2400,
+          "predicted": -0.43706268117191704,
+          "observed": -0.05536141510616677,
+          "true": 0.25637056632425786
+        }
+      ]
+    }
+  },
+  "acquisition": {
+    "margin_rate": 0.7025,
+    "budget_per_week": 35000.0,
+    "spend_bounds": {
+      "low_x_base": 0.5,
+      "high_x_base": 2.0
+    },
+    "response_curves": [
+      {
+        "channel": "influencer",
+        "k": 3.9493846968175577,
+        "gamma": 0.512268206343718,
+        "gamma_se": 0.039376597503352165,
+        "gamma_ci_low": 0.4350914934034179,
+        "gamma_ci_high": 0.589444919284018,
+        "n_weeks": 52
+      },
+      {
+        "channel": "paid_social",
+        "k": 0.19673819256114164,
+        "gamma": 0.8074812009249481,
+        "gamma_se": 0.04632722640686546,
+        "gamma_ci_low": 0.7166815056638589,
+        "gamma_ci_high": 0.8982808961860373,
+        "n_weeks": 52
+      },
+      {
+        "channel": "referral",
+        "k": 0.048392666491598145,
+        "gamma": 0.9957901727756053,
+        "gamma_se": 0.039638300731700764,
+        "gamma_ci_low": 0.9181005309331042,
+        "gamma_ci_high": 1.0734798146181066,
+        "n_weeks": 52
+      }
+    ],
+    "gamma_true": {
+      "paid_social": 0.75,
+      "influencer": 0.6,
+      "referral": 0.9
+    },
+    "gamma_ci_covers_truth_main_panel": {
+      "paid_social": true,
+      "influencer": false,
+      "referral": false
+    },
+    "gamma_ci_coverage_across_panels": {
+      "paid_social": 0.9375,
+      "influencer": 0.925,
+      "referral": 0.9125
+    },
+    "gamma_estimate_mean_across_panels": {
+      "paid_social": 0.7544609770720045,
+      "influencer": 0.6028854167272719,
+      "referral": 0.8968867269391889
+    },
+    "gamma_estimate_sd_across_panels": {
+      "paid_social": 0.05176864122202522,
+      "influencer": 0.047100556666407396,
+      "referral": 0.056575579910792546
+    },
+    "ltv_margin_est": {
+      "paid_social": 37.395827706566436,
+      "influencer": 17.437870097703957,
+      "referral": 48.65401385613914
+    },
+    "ltv_margin_true": {
+      "paid_social": 37.36931916442871,
+      "influencer": 17.55039785421821,
+      "referral": 47.72495392402499
+    },
+    "marginal_economics_true": [
+      {
+        "channel": "paid_social",
+        "spend": 20000.0,
+        "signups": 588.6274906776001,
+        "avg_cac": 33.97734614293489,
+        "marginal_cac": 45.303128190579855,
+        "ltv_margin": 37.36931916442871,
+        "ltv_to_avg_cac": 1.0998304284044012,
+        "ltv_to_marginal_cac": 0.8248728213033009
+      },
+      {
+        "channel": "influencer",
+        "spend": 10000.0,
+        "signups": 452.13955767172433,
+        "avg_cac": 22.117065030749853,
+        "marginal_cac": 36.86177505124976,
+        "ltv_margin": 17.55039785421821,
+        "ltv_to_avg_cac": 0.7935229122769002,
+        "ltv_to_marginal_cac": 0.47611374736614004
+      },
+      {
+        "channel": "referral",
+        "spend": 5000.0,
+        "signups": 234.67438535455665,
+        "avg_cac": 21.30611737810999,
+        "marginal_cac": 23.673463753455547,
+        "ltv_margin": 47.72495392402499,
+        "ltv_to_avg_cac": 2.2399648456390198,
+        "ltv_to_marginal_cac": 2.015968361075118
+      }
+    ],
+    "marginal_economics_est": [
+      {
+        "channel": "paid_social",
+        "spend": 20000.0,
+        "signups": 584.6413699279153,
+        "avg_cac": 34.2090057747127,
+        "marginal_cac": 42.36508012264211,
+        "ltv_margin": 37.395827706566436,
+        "ltv_to_avg_cac": 1.0931573969977646,
+        "ltv_to_marginal_cac": 0.8827040477277452
+      },
+      {
+        "channel": "influencer",
+        "spend": 10000.0,
+        "signups": 442.18322659564194,
+        "avg_cac": 22.615059546672,
+        "marginal_cac": 44.14691223584919,
+        "ltv_margin": 17.437870097703957,
+        "ltv_to_avg_cac": 0.7710733664758397,
+        "ltv_to_marginal_cac": 0.3949963704039907
+      },
+      {
+        "channel": "referral",
+        "spend": 5000.0,
+        "signups": 233.44121374193963,
+        "avg_cac": 21.418668622616526,
+        "marginal_cac": 21.509218717147434,
+        "ltv_margin": 48.65401385613914,
+        "ltv_to_avg_cac": 2.2715704095988536,
+        "ltv_to_marginal_cac": 2.262007490646395
+      }
+    ],
+    "main_panel": {
+      "current_allocation": {
+        "spend": {
+          "paid_social": 20000.0,
+          "influencer": 10000.0,
+          "referral": 5000.0
+        },
+        "total_spend": 35000.0,
+        "true_profit_per_week": 6131.661919052127,
+        "true_signups_per_week": 1275.441433703881
+      },
+      "equal_split": {
+        "spend": {
+          "paid_social": 11666.666666666666,
+          "influencer": 11666.666666666666,
+          "referral": 11666.666666666666
+        },
+        "total_spend": 35000.0,
+        "true_profit_per_week": 12396.345446676729,
+        "true_signups_per_week": 1391.9385142609885
+      },
+      "maximize_signups": {
+        "spend": {
+          "paid_social": 16485.045589446527,
+          "influencer": 8514.95441055348,
+          "referral": 10000.00000000001
+        },
+        "total_spend": 35000.000000000015,
+        "true_profit_per_week": 12133.527164163483,
+        "true_signups_per_week": 1357.6796583002183
+      },
+      "blended_ltv_rule": {
+        "spend": {
+          "paid_social": 10000.00000000001,
+          "influencer": 5329.534011383233,
+          "referral": 10000.00000000001
+        },
+        "total_spend": 25329.53401138325,
+        "true_profit_per_week": 14089.014468496789,
+        "true_signups_per_week": 1097.8638961766233
+      },
+      "channel_ltv_aware_same_budget": {
+        "spend": {
+          "paid_social": 19999.99999999998,
+          "influencer": 5000.000000000004,
+          "referral": 10000.00000000001
+        },
+        "total_spend": 34999.99999999999,
+        "true_profit_per_week": 13131.518377371187,
+        "true_signups_per_week": 1324.846239847046
+      },
+      "channel_ltv_aware": {
+        "spend": {
+          "paid_social": 10461.105346653228,
+          "influencer": 5000.000000000004,
+          "referral": 10000.00000000001
+        },
+        "total_spend": 25461.10534665324,
+        "true_profit_per_week": 14202.82672786183,
+        "true_signups_per_week": 1098.2543058169426
+      },
+      "true_optimum": {
+        "spend": {
+          "paid_social": 10000.00000000001,
+          "influencer": 5000.000000000004,
+          "referral": 10000.00000000001
+        },
+        "total_spend": 25000.000000000022,
+        "true_profit_per_week": 14214.171516833208,
+        "true_signups_per_week": 1086.2187491694465
+      }
+    },
+    "panels": {
+      "n": 80,
+      "profit_per_week": [
+        {
+          "policy": "current_allocation",
+          "mean": 6131.661919052128,
+          "p05": 6131.661919052127,
+          "p95": 6131.661919052127
+        },
+        {
+          "policy": "equal_split",
+          "mean": 12396.345446676729,
+          "p05": 12396.345446676729,
+          "p95": 12396.345446676729
+        },
+        {
+          "policy": "maximize_signups",
+          "mean": 10313.303191334862,
+          "p05": 9099.658357447535,
+          "p95": 11855.126629286726
+        },
+        {
+          "policy": "blended_ltv_rule",
+          "mean": 13014.330154854228,
+          "p05": 11835.14491956117,
+          "p95": 13970.072791758588
+        },
+        {
+          "policy": "channel_ltv_aware_same_budget",
+          "mean": 13131.518377371114,
+          "p05": 13131.518377368855,
+          "p95": 13131.518377372959
+        },
+        {
+          "policy": "channel_ltv_aware",
+          "mean": 14185.927021724501,
+          "p05": 14097.424458843483,
+          "p95": 14214.171516833208
+        },
+        {
+          "policy": "true_optimum",
+          "mean": 14214.171516833212,
+          "p05": 14214.171516833208,
+          "p95": 14214.171516833208
+        }
+      ],
+      "share_same_budget_beats_equal": 1.0,
+      "share_same_budget_beats_maximize_signups": 1.0,
+      "share_ltv_aware_beats_maximize_signups": 1.0,
+      "share_ltv_aware_beats_blended": 0.975,
+      "share_ltv_aware_beats_current": 1.0,
+      "share_ltv_aware_beats_equal": 1.0,
+      "mean_regret_vs_optimum": 28.244495108709497
+    },
+    "optimum_at_bound": {
+      "paid_social": true,
+      "influencer": true,
+      "referral": true
+    }
+  },
+  "matchmaking": {
+    "n_players": 1000,
+    "rounds": 60,
+    "seeds": [
+      0,
+      1
+    ],
+    "k_sweep": [
+      {
+        "k": 8,
+        "logloss_last20": 0.5894314434537369,
+        "excess_logloss": 0.08157577668711036,
+        "spearman_round10": 0.7942019302019303,
+        "spearman_final": 0.957059595059595
+      },
+      {
+        "k": 16,
+        "logloss_last20": 0.5541929114403945,
+        "excess_logloss": 0.04633724467376793,
+        "spearman_round10": 0.7941863001863001,
+        "spearman_final": 0.9558103098103099
+      },
+      {
+        "k": 32,
+        "logloss_last20": 0.5357689884613333,
+        "excess_logloss": 0.027913321694706672,
+        "spearman_round10": 0.7938839538839539,
+        "spearman_final": 0.9465572145572148
+      },
+      {
+        "k": 64,
+        "logloss_last20": 0.5423219189650117,
+        "excess_logloss": 0.03446625219838517,
+        "spearman_round10": 0.7901155841155841,
+        "spearman_final": 0.9210484830484832
+      }
+    ],
+    "method_comparison": [
+      {
+        "index": 0,
+        "round": 5,
+        "elo_k32": 0.6667187336571396,
+        "glicko1": 0.6681384081384082,
+        "bradley_terry_mle": 0.6816632796632797
+      },
+      {
+        "index": 1,
+        "round": 10,
+        "elo_k32": 0.7938839538839539,
+        "glicko1": 0.7905870405870405,
+        "bradley_terry_mle": 0.8041430641430642
+      },
+      {
+        "index": 2,
+        "round": 20,
+        "elo_k32": 0.8834751674751675,
+        "glicko1": 0.8874890274890277,
+        "bradley_terry_mle": 0.8934985734985736
+      },
+      {
+        "index": 3,
+        "round": 40,
+        "elo_k32": 0.9303327243327244,
+        "glicko1": 0.9398124638124639,
+        "bradley_terry_mle": 0.9420969900969902
+      },
+      {
+        "index": 4,
+        "round": 60,
+        "elo_k32": 0.9465572145572148,
+        "glicko1": 0.9600565680565681,
+        "bradley_terry_mle": 0.9612453072453073
+      }
+    ],
+    "pairing_policies": [
+      {
+        "index": 0,
+        "policy": "random",
+        "fair_match_share": 0.20087500000000003,
+        "spearman_round20": 0.8834751674751675,
+        "spearman_final": 0.9465572145572148,
+        "excess_logloss": 0.027913321694706672
+      },
+      {
+        "index": 1,
+        "policy": "rating",
+        "fair_match_share": 0.47195,
+        "spearman_round20": 0.8703519783519784,
+        "spearman_final": 0.9289965109965113,
+        "excess_logloss": 0.03877992178827855
+      },
+      {
+        "index": 2,
+        "policy": "rating_explore",
+        "fair_match_share": 0.404525,
+        "spearman_round20": 0.8777233457233458,
+        "spearman_final": 0.9388121188121189,
+        "excess_logloss": 0.03506382249096246
+      },
+      {
+        "index": 3,
+        "policy": "oracle",
+        "fair_match_share": 0.998,
+        "spearman_round20": 0.00011373011373011374,
+        "spearman_final": 2.9484029484029487e-05,
+        "excess_logloss": 0.02598962483864664
+      }
+    ],
+    "excess_logloss_last20": {
+      "elo_k32": 0.027913321694706672,
+      "glicko1": 0.021947139352277656
+    }
+  }
+}
